@@ -18,22 +18,17 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 
 ## 💻 Program
 ```
-lst=eval(input())
-a=np.array(lst)
-print("Printing Original array")
-print(a)
-lst1=eval(input())
-new_col=np.array(lst1)
-after_delete=np.delete(a,1,axis=1)
-print("Array after deleting column 2 on axis 1")
-print(after_delete)
-final_array=np.insert(after_delete,1,new_col,axis=1)
-print("Array after inserting column 2 on axis 1")
-print(final_array)
+import pandas as pd
+d=eval(input())
+df=pd.DataFrame(d)
+print(df)
+s=pd.Series(eval(input()))
+print(s.to_frame())
 ```
 
 ## Output
-![Uploading image.png…]()
+<img width="1235" height="866" alt="image" src="https://github.com/user-attachments/assets/7b2c9033-207d-429f-8900-a9699930eacd" />
+
 
 ## Result
 Thus,the given Python Program has been executed successfully.

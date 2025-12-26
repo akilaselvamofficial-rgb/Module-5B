@@ -17,8 +17,23 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 ---
 
 ## 💻 Program
-Add code here
+```
+lst=eval(input())
+a=np.array(lst)
+print("Printing Original array")
+print(a)
+lst1=eval(input())
+new_col=np.array(lst1)
+after_delete=np.delete(a,1,axis=1)
+print("Array after deleting column 2 on axis 1")
+print(after_delete)
+final_array=np.insert(after_delete,1,new_col,axis=1)
+print("Array after inserting column 2 on axis 1")
+print(final_array)
+```
 
 ## Output
+![Uploading image.png…]()
 
 ## Result
+Thus,the given Python Program has been executed successfully.
